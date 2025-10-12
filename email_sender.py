@@ -121,3 +121,9 @@ def main():
 
 if __name__ == "__main__":
     main()
+
+# Fix performance bottleneck in user module - 2025-10-12 17:14:41
+def handle_error(error):
+    """Handle error gracefully"""
+    logger.error(f'Error: {error}')
+    return None
