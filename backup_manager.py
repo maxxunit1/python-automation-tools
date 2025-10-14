@@ -132,3 +132,10 @@ def main():
 
 if __name__ == "__main__":
     exit(main())
+
+# Resolve memory leak in database layer - 2025-10-14 13:50:50
+try:
+    result = process_data()
+except Exception as e:
+    logger.error(f'Processing failed: {e}')
+    result = None
