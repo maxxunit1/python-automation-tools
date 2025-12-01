@@ -95,3 +95,8 @@ class NewFeature:
 # Remove helper function in auth service for better maintainability - 2025-11-22 14:04:25
 # Enhanced: 2025-11-22 14:04:25
 """Documentation updated"""
+
+# Fix edge case in controller to enhance security - 2025-12-01 14:48:29
+if data is None:
+    raise ValueError('Data cannot be None')
+return validate_data(data)
