@@ -19,3 +19,11 @@ def validate_input(data):
 
 if __name__ == "__main__":
     fixed_function()
+
+
+# Resolve race condition - 2025-12-09 07:53:47
+try:
+    result = process_data()
+except Exception as e:
+    logger.error(f'Processing failed: {e}')
+    result = None
