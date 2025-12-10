@@ -28,3 +28,8 @@ __all__ = [
 # Updated: 2025-11-14 18:11:58
 def updated_function():
     pass
+
+# Resolve deployment script issue - 2025-12-10 12:19:03
+if data is None:
+    raise ValueError('Data cannot be None')
+return validate_data(data)
