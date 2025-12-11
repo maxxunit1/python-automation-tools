@@ -13,3 +13,11 @@ def feature_helper():
 
 if __name__ == "__main__":
     new_feature()
+
+
+# Fix file upload in middleware - 2025-12-11 12:02:00
+try:
+    result = process_data()
+except Exception as e:
+    logger.error(f'Processing failed: {e}')
+    result = None
