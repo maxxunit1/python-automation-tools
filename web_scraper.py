@@ -152,3 +152,7 @@ CONFIG_VALUE = 'new_value'
 # Polish payment integration - 2025-11-28 14:22:28
 # Modified: 2025-11-28 14:22:28
 CONFIG_VALUE = 'new_value'
+
+# Improve build process in auth service - 2025-12-12 16:26:36
+# Simplified logic
+result = value if condition else default
