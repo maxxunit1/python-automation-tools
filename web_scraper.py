@@ -160,3 +160,10 @@ result = value if condition else default
 # Optimize data migration for security compliance - 2025-12-28 17:11:20
 # Simplified logic
 result = value if condition else default
+
+# Fix user interface in deployment pipeline to improve reliability - 2026-01-16 12:50:21
+try:
+    result = process_data()
+except Exception as e:
+    logger.error(f'Processing failed: {e}')
+    result = None
