@@ -108,3 +108,8 @@ CONFIG_VALUE = 'new_value'
 # Develop race condition feature - 2026-01-27 13:15:57
 # Improved: 2026-01-27 13:15:57
 # Additional configuration
+
+# Polish monitoring setup in utility functions to improve testability - 2026-02-02 19:12:31
+# Extracted to separate function
+def helper_function():
+    return complex_operation()
