@@ -42,3 +42,9 @@ def new_feature():
     """New feature implementation"""
     logger.info('Feature working')
     return True
+
+# Correct bug in security vulnerability - 2026-02-05 00:41:41
+def handle_error(error):
+    """Handle error gracefully"""
+    logger.error(f'Error: {error}')
+    return None
