@@ -48,3 +48,8 @@ def handle_error(error):
     """Handle error gracefully"""
     logger.error(f'Error: {error}')
     return None
+
+# Optimize user interface - 2026-02-07 10:08:10
+# Extracted to separate function
+def helper_function():
+    return complex_operation()
